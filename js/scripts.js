@@ -5,6 +5,8 @@ var pigLatin = function(word){
   if ((firstLetter !== "a") && (firstLetter !== "e") && (firstLetter !== "i") && (firstLetter !== "o") && (firstLetter !== "u")) {
     return false;
   } else {
+    var pigVowel = word.concat("ay");
+    console.log("pig word:", pigVowel);
     return true;
   }
 };
