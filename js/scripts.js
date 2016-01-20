@@ -1,15 +1,9 @@
-// var vowels = ["a","e","i","o","u"];
+var vowels = ["a","e","i","o","u"];
 
-var pigLatin = function(text) {
-  if ((text.slice(0,1) !== "a") || (text.slice(0,1) !== "e") ||   (text.slice(0,1) !== "i") || (text.slice(0,1) !== "o") || (text.slice(0,1) !== "u")) {
+var pigLatin = function(word) {
+  var split = word.split("");
+  console.log(split);
+  if (split[0] !== vowels[0]) {
     return false;
-  } else {
-      return true;
   }
 };
-
-
-
-
-// if ((text.slice(0,1) === "a") || (text.slice(0,1) === "e") ||   (text.slice(0,1) === "i") || (text.slice(0,1) === "o") || (text.slice(0,1) === "u")) {
-//   return true;
