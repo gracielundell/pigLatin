@@ -11,5 +11,10 @@ describe('pigLatin', function () {
   it("will move the first 3 letters from the beginning to the end and add ay if the 4th letter is a vowel", function() {
     expect (pigLatin("xylophone")).to.equal("ophonexylay");
   });
-
+  it("will check if first letter contain a Q", function() {
+    expect (pigLatin("qeyanna")).to.equal("eyannaqay");
+  });
+  it("will check if 2nd letter is a Q", function() {
+    expect (pigLatin("squeak")).to.equal("eaksquay");
+  });
 });

@@ -12,6 +12,28 @@ var pigLatin = function(word){
     console.log("first PW: ", pigWord);
     return pigWord;
   }
+  else if (firstLetter === "q") {
+    if (secondLetter === "u") {
+      pigWord = word.slice(2) + word.slice(0,2) + "ay";
+      console.log("1st letter Q, 2nd letter U: ", pigWord);
+      return pigWord;
+    } else {
+      pigWord = word.slice(1) + word.slice(0,1) + "ay";
+      console.log("1st letter Q, 2nd letter NOT U: ", pigWord);
+      return pigWord;
+    }
+  }
+  else if (secondLetter === "q") {
+    if (thirdLetter === "u") {
+      pigWord = word.slice(3) + word.slice(0,3) + "ay";
+      console.log("2nd letter Q, 3rd letter U: ", pigWord);
+      return pigWord;
+    } else {
+      pigWord = word.slice(2) + word.slice(0,2) + "ay";
+      console.log("2nd letter Q, 3rd letter NOT U: ", pigWord);
+      return pigWord;
+    }
+  }
   else if ((secondLetter === "a") || (secondLetter === "e") || (secondLetter === "i") || (secondLetter === "o") || (secondLetter === "u")) {
     pigWord = word.slice(1) + word.slice(0,1) + "ay";
     console.log("second PW: ", pigWord);
