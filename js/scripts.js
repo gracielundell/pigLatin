@@ -1,9 +1,10 @@
-var vowels = ["a","e","i","o","u"];
-
-var pigLatin = function(word) {
-  var split = word.split("");
-  console.log(split);
-  if (split[0] !== vowels[0]) {
+var pigLatin = function(word){
+  console.log(word);
+  var firstLetter = word.slice(0,1);
+  console.log(firstLetter);
+  if ((firstLetter !== "a") && (firstLetter !== "e") && (firstLetter !== "i") && (firstLetter !== "o") && (firstLetter !== "u")) {
     return false;
+  } else {
+    return true;
   }
 };
