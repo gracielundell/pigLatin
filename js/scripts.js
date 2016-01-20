@@ -49,5 +49,16 @@ var pigLatin = function(word){
     console.log("fourth PW: ", pigWord);
     return pigWord;
   }
-
 };
+
+$(document).ready(function() {
+  $("form").submit(function(event){
+    var word = $("input#word").val();
+    var result = pigLatin(word);
+
+    // $(".pig-latin").text(word);
+    $("#showLatin").text(result);
+    $("#result").show();
+    event.preventDefault();
+  });
+});
